@@ -1,4 +1,3 @@
-
 /*Biblioteca do Arduino*/
 #include <Arduino.h>
 
@@ -8,7 +7,7 @@
 
 /*mapeamento de pinos*/ 
 #define LED1 2
-#define LED2 14
+#define LED2 27
 
 /* Variáveis para armazenamento do handle das tasks*/
 TaskHandle_t task1Handle = NULL;
@@ -58,3 +57,4 @@ void vTask2(void *pvParameters)
     Serial.println("Task 2: " + String(cont++));
     vTaskDelay(pdMS_TO_TICKS(1000));
   }
+}
